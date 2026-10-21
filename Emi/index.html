@@ -1,0 +1,380 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>★ Emi's Page ★</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="pagina">
+
+        <header>
+            <div class="decoracion">
+                ★ ☆ ★ ☆ ★
+            </div>
+
+            <h1>~* Emi's Page *~</h1>
+
+            <p>
+                welcome to my little corner of the internet
+            </p>
+
+            <div class="decoracion">
+                ☆ ★ ☆ ★ ☆
+            </div>
+        </header>
+
+        <nav>
+            <a href="#sobre-mi">About Me</a>
+            |
+            <a href="#gustos">My Stuff</a>
+        </nav>
+
+        <main>
+
+            <section id="sobre-mi" class="caja">
+
+                <div class="titulo">
+                    ★ Sobre mí ★
+                </div>
+
+                <div class="sobre-mi">
+
+                    <div class="imagen-random">
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSVlM19kKhovT0twfD-sdw79xC8gBupBihj5zFUztLxQ&s=10"
+                            alt="Imagen random">
+                    </div>
+
+                    <div class="texto">
+
+                        <p>
+                            Hola, soy <b>Emiliano</b>.
+                        </p>
+
+                        <p>
+                            Tengo <b>19 años</b>.
+                        </p>
+
+                        <p>
+                            Esta página es básicamente un pequeño
+                            espacio para poner algunas cosas sobre mí
+                            y cosas que me gustan.
+                        </p>
+
+                        <p class="nota">
+                            ☆ Gracias por visitar mi página ☆
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section id="gustos" class="caja">
+
+                <div class="titulo">
+                    ★ Cosas que me gustan ★
+                </div>
+
+                <p class="centrado">
+                    Algunas cosas que me gustan.
+                </p>
+
+                <div class="galeria">
+
+                    <div class="item">
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt9R7yGGTkSGxmLIywtiWGx_QKPQDMnTtVhbaoMXVr0Q&s=10"
+                            alt="Uno de mis gustos">
+                    </div>
+
+                    <div class="item">
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7tDq0f42ZyvcOXR9OdzDYkehWyNTNUKWVvm0dBQOFaQ&s=10"
+                            alt="Uno de mis gustos">
+                    </div>
+
+                    <div class="item">
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQepD_eOwdp1qvBTnikl9hmiTTU-_C66KDVqkUzID5Rew&s=10"
+                            alt="Uno de mis gustos">
+                    </div>
+
+                    <div class="item">
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLcYdNkW36KfcWNgtx0iaunk2U8rg4VRl6VZcmX3ENFQ&s=10"
+                            alt="Uno de mis gustos">
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+        <footer>
+
+            <div>
+                ★ ☆ ★ ☆ ★
+            </div>
+
+            <p>
+                Esta página fue creada por Emi
+            </p>
+
+            <p>
+                Última actualización: 2026
+            </p>
+
+            <p class="pequeno">
+                Best viewed at 1024x768
+            </p>
+
+            <div>
+                ☆ ★ ☆ ★ ☆
+            </div>
+
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
+```
+
+[/writing]
+
+### `css/style.css`
+
+```css
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 25px 10px;
+    background-color: #22283a;
+    color: #222;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 13px;
+}
+
+.pagina {
+    width: 850px;
+    max-width: 100%;
+    margin: auto;
+    background-color: #eeeeee;
+    border: 1px solid #111;
+    box-shadow: 4px 4px 0 #111;
+}
+
+header {
+    padding: 20px;
+    text-align: center;
+    background-color: #303b67;
+    color: white;
+    border-bottom: 3px solid #151a2e;
+}
+
+header h1 {
+    margin: 10px 0;
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    font-size: 34px;
+    font-weight: normal;
+    color: #fff;
+    text-shadow: 2px 2px #151a2e;
+}
+
+header p {
+    margin: 5px;
+    color: #d7dcf2;
+    font-family: "Courier New", monospace;
+    font-size: 11px;
+}
+
+.decoracion {
+    color: #d9c85c;
+    letter-spacing: 8px;
+}
+
+nav {
+    padding: 7px;
+    text-align: center;
+    background-color: #d8d8d8;
+    border-bottom: 1px solid #888;
+    font-family: "Courier New", monospace;
+}
+
+nav a {
+    margin: 0 10px;
+    color: #29366b;
+    text-decoration: underline;
+}
+
+nav a:hover {
+    color: #8a3158;
+}
+
+main {
+    padding: 10px;
+    background-color: #e7e7e7;
+}
+
+.caja {
+    margin-bottom: 15px;
+    background-color: #f7f7f7;
+    border: 1px solid #999;
+    box-shadow: 1px 1px 0 #fff;
+}
+
+.titulo {
+    padding: 7px 10px;
+    background-color: #4b5685;
+    color: #fff;
+    border-bottom: 2px solid #252d4d;
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    font-size: 17px;
+}
+
+.caja > p,
+.caja > .sobre-mi,
+.caja > .galeria {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.sobre-mi {
+    display: flex;
+    gap: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.imagen-random {
+    width: 210px;
+    flex-shrink: 0;
+    padding: 7px;
+    background-color: #ddd;
+    border: 1px solid #888;
+    text-align: center;
+}
+
+.imagen-random img {
+    display: block;
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border: 1px solid #333;
+}
+
+.texto {
+    padding: 5px;
+    line-height: 1.7;
+}
+
+.texto b {
+    color: #303b67;
+}
+
+.nota {
+    margin-top: 20px;
+    padding: 7px;
+    background-color: #eeeecc;
+    border: 1px dashed #999966;
+    color: #555522;
+}
+
+.centrado {
+    text-align: center;
+    color: #666;
+    font-size: 12px;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+    padding-top: 8px;
+    padding-bottom: 20px;
+}
+
+.item {
+    width: 100%;
+    padding: 8px;
+    background-color: #dddddd;
+    border: 1px solid #888888;
+    box-shadow: 2px 2px 0 #cccccc;
+}
+
+.item img {
+    display: block;
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border: 1px solid #333333;
+}
+
+.item:hover {
+    background-color: #eeeeee;
+}
+
+footer {
+    padding: 15px;
+    background-color: #303b67;
+    color: #ddd;
+    text-align: center;
+    font-family: "Courier New", monospace;
+    font-size: 11px;
+}
+
+footer div {
+    color: #d9c85c;
+    letter-spacing: 6px;
+}
+
+.pequeno {
+    color: #999fbc;
+    font-size: 9px;
+}
+
+@media (max-width: 650px) {
+
+    body {
+        padding: 5px;
+    }
+
+    header h1 {
+        font-size: 27px;
+    }
+
+    .sobre-mi {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imagen-random {
+        width: 220px;
+    }
+
+    .galeria {
+        grid-template-columns: 1fr;
+    }
+
+    .item img {
+        height: 300px;
+    }
+}
+```
+
+[/writing]
+
+**Importante:** copia solamente el contenido que está dentro de cada bloque. No copies los ` ```html`, ` ```css`, `:::writing` ni `[/writing]`.
