@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HUD Cyberpunk Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800;900&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body class="min-h-screen flex flex-col justify-between selection:bg-cyan-500 selection:text-black">
+
+    <header class="w-full pt-10 pb-6 px-4 flex flex-col items-center justify-center">
+        <div class="text-center w-full max-w-2xl px-4">
+            <h1 contenteditable="true" spellcheck="false" class="neon-name text-4xl sm:text-5xl md:text-6xl font-black tracking-widest uppercase mb-2">
+                Gabino Martinez Delgado
+            </h1>
+            <p class="text-xs sm:text-sm tracking-widest text-cyan-400 uppercase opacity-80">
+                Carta de presentacíon
+            </p>
+        </div>
+    </header>
+
+    <main class="flex-grow flex flex-col items-center justify-center px-4 py-8">
+        <div class="w-full max-w-4xl flex flex-col items-center">
+            
+            <!-- Carousel Stage -->
+            <div class="carousel-stage my-6" id="carouselStage">
+                <div class="carousel-container" id="carouselContainer">
+                    
+                    <!-- Card 1: Cyan -->
+                    <div class="hud-card card-cyan" style="transform: rotateY(0deg) translateZ(340px);">
+                        <div>
+                            <h2 contenteditable="true" spellcheck="false" class="title-cyan text-xl sm:text-2xl font-bold text-center tracking-wider mb-3">
+                                ¿Qué me gusta?
+                            </h2>
+                            <p contenteditable="true" spellcheck="false" class="text-white text-xs sm:text-sm text-justify leading-relaxed opacity-90 mb-4">
+                                Me gusta la Música, perzonalizar cualquier cosa que no se pueda perzonalizar o que tenga reglas estrictas de que no se puede perzonalizar, y consumir grandes cantidades de informacion sobre temas que me dan curiosidad.
+                            </p>
+                        </div>
+                        <div class="w-full h-28 sm:h-32 bg-gray-900 border border-cyan-500/40 rounded overflow-hidden relative group">
+                            <img src="Images/card1.jpg" alt="Proyecto Alpha" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity" onerror="this.onerror=null; this.src='https://placehold.co/400x200/0a192f/00f3ff?text=Images/card1.jpg';">
+                            <div class="absolute bottom-1 right-1 bg-black/70 px-2 py-0.5 text-[10px] text-cyan-400 font-mono border border-cyan-500/30">
+                                Images/card1.jpg
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: Magenta -->
+                    <div class="hud-card card-magenta" style="transform: rotateY(120deg) translateZ(340px);">
+                        <div>
+                            <h2 contenteditable="true" spellcheck="false" class="title-magenta text-xl sm:text-2xl font-bold text-center tracking-wider mb-3">
+                                ¿En que soy bueno?
+                            </h2>
+                            <p contenteditable="true" spellcheck="false" class="text-white text-xs sm:text-sm text-justify leading-relaxed opacity-90 mb-4">
+                                Practicamente soy bueno en cualquier cosa que no tenga que ver con dibujar, actuar en escenarios o hablar en publico.
+                            </p>
+                        </div>
+                        <div class="w-full h-28 sm:h-32 bg-gray-900 border border-pink-500/40 rounded overflow-hidden relative group">
+                            <img src="Images/card2.jpg" alt="Inteligencia Neon" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity" onerror="this.onerror=null; this.src='https://placehold.co/400x200/1a0a1f/ff007f?text=Images/card2.jpg';">
+                            <div class="absolute bottom-1 right-1 bg-black/70 px-2 py-0.5 text-[10px] text-pink-400 font-mono border border-pink-500/30">
+                                Images/mis gustos.jpg
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3: Amber -->
+                    <div class="hud-card card-amber" style="transform: rotateY(240deg) translateZ(340px);">
+                        <div>
+                            <h2 contenteditable="true" spellcheck="false" class="title-amber text-xl sm:text-2xl font-bold text-center tracking-wider mb-3">
+                                Ejemplos
+                            </h2>
+                            <p contenteditable="true" spellcheck="false" class="text-white text-xs sm:text-sm text-justify leading-relaxed opacity-90 mb-4">
+                                En este card se muestra algunos de mis gustos, en general son variados y muchos, algunos no tiene nada que ver con otros pero es por que me gusta descubrir cosas nuevas todo el tiempo.
+                            </p>
+                        </div>
+                        <div class="w-full h-28 sm:h-32 bg-gray-900 border border-amber-500/40 rounded overflow-hidden relative group">
+                            <img src="Images/mis gustos.jpg" alt="Matriz Quantum" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity" onerror="this.onerror=null; this.src='https://placehold.co/400x200/1f160a/ffb700?text=Images/card3.jpg';">
+                            <div class="absolute bottom-1 right-1 bg-black/70 px-2 py-0.5 text-[10px] text-amber-400 font-mono border border-amber-500/30">
+                                Images/mis gustos.jpg
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Carousel Controls with Increased Margin Top -->
+            <div class="flex items-center justify-center gap-4 mt-14 mb-4">
+                <button id="prevBtn" class="hud-btn px-6 py-2.5 text-xs sm:text-sm font-bold tracking-widest uppercase">
+                    &lt;&lt; ROTAR IZQ
+                </button>
+                <button id="autoRotateBtn" class="hud-btn px-6 py-2.5 text-xs sm:text-sm font-bold tracking-widest uppercase bg-cyan-500/20">
+                    PAUSAR / AUTO
+                </button>
+                <button id="nextBtn" class="hud-btn px-6 py-2.5 text-xs sm:text-sm font-bold tracking-widest uppercase">
+                    ROTAR DER &gt;&gt;
+                </button>
+            </div>
+            
+            <p class="text-[11px] text-gray-400 mt-2 tracking-wider">
+                * Las tarjetas giran lentamente sobre su eje o puedes controlarlas manualmente.
+            </p>
+        </div>
+    </main>
+
+    <footer class="hud-footer w-full pt-8 pb-6 px-4 mt-12">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 text-center md:text-left items-center">
+            <div>
+                <h3 contenteditable="true" spellcheck="false" class="text-cyan-400 font-bold tracking-widest text-sm uppercase mb-2">
+                    // CONTACTO DIRECTO
+                </h3>
+                <p contenteditable="true" spellcheck="false" class="text-white text-xs sm:text-sm opacity-90">
+                    Email: contacto@tudominio.com<br>
+                    Ubicación: Sector Cyber / Global
+                </p>
+            </div>
+
+            <div class="text-center">
+                <h3 contenteditable="true" spellcheck="false" class="text-pink-400 font-bold tracking-widest text-sm uppercase mb-2">
+                    // REDES Y CANALES
+                </h3>
+                <div class="flex justify-center gap-4 text-xs sm:text-sm text-white">
+                    <span contenteditable="true" spellcheck="false" class="hover:text-cyan-400 cursor-pointer">LinkedIn</span>
+                    <span contenteditable="true" spellcheck="false" class="hover:text-pink-400 cursor-pointer">GitHub</span>
+                    <span contenteditable="true" spellcheck="false" class="hover:text-amber-400 cursor-pointer">Twitter/X</span>
+                </div>
+            </div>
+
+            <div class="text-md md:text-right">
+                <h3 contenteditable="true" spellcheck="false" class="text-amber-400 font-bold tracking-widest text-sm uppercase mb-2">
+                    // ESTADO DEL SISTEMA
+                </h3>
+                <p contenteditable="true" spellcheck="false" class="text-white text-xs sm:text-sm opacity-90">
+                    STATUS: OPERATIVO<br>
+                    EDICIÓN LIBRE HABILITADA
+                </p>
+            </div>
+        </div>
+        <div class="max-w-6xl mx-auto mt-6 pt-4 border-t border-cyan-900/40 text-center text-[10px] text-cyan-500/60 tracking-widest">
+            CYBERPUNK HUD PORTFOLIO INTERFACE &copy; 2026. TODOS LOS DERECHOS RESERVADOS.
+        </div>
+    </footer>
+
+    <script>
+        const container = document.getElementById('carouselContainer');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        const autoRotateBtn = document.getElementById('autoRotateBtn');
+
+        let currentAngle = 0;
+        let isAutoRotating = true;
+        let autoRotateInterval;
+
+        function updateCarousel() {
+            container.style.transform = `rotateY(${currentAngle}deg)`;
+        }
+
+        function rotateNext() {
+            currentAngle -= 120;
+            updateCarousel();
+        }
+
+        function rotatePrev() {
+            currentAngle += 120;
+            updateCarousel();
+        }
+
+        nextBtn.addEventListener('click', () => {
+            rotateNext();
+            resetAutoRotate();
+        });
+
+        prevBtn.addEventListener('click', () => {
+            rotatePrev();
+            resetAutoRotate();
+        });
+
+        function startAutoRotate() {
+            autoRotateInterval = setInterval(() => {
+                if (isAutoRotating) {
+                    currentAngle -= 120;
+                    updateCarousel();
+                }
+            }, 5000);
+        }
+
+        function resetAutoRotate() {
+            if (isAutoRotating) {
+                clearInterval(autoRotateInterval);
+                startAutoRotate();
+            }
+        }
+
+        autoRotateBtn.addEventListener('click', () => {
+            isAutoRotating = !isAutoRotating;
+            if (isAutoRotating) {
+                autoRotateBtn.classList.add('bg-cyan-500/20');
+                autoRotateBtn.textContent = 'PAUSAR / AUTO';
+                startAutoRotate();
+            } else {
+                autoRotateBtn.classList.remove('bg-cyan-500/20');
+                autoRotateBtn.textContent = 'REANUDAR AUTO';
+                clearInterval(autoRotateInterval);
+            }
+        });
+
+        window.onload = function() {
+            startAutoRotate();
+        };
+
+        function adjustCarouselDepth() {
+            const cards = document.querySelectorAll('.hud-card');
+            let translateZVal = window.innerWidth < 640 ? 250 : 340;
+            cards[0].style.transform = `rotateY(0deg) translateZ(${translateZVal}px)`;
+            cards[1].style.transform = `rotateY(120deg) translateZ(${translateZVal}px)`;
+            cards[2].style.transform = `rotateY(240deg) translateZ(${translateZVal}px)`;
+        }
+
+        window.addEventListener('resize', adjustCarouselDepth);
+        adjustCarouselDepth();
+    </script>
+</body>
+</html>
